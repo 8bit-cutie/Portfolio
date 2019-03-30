@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+p {
+    font-size: 14px;
+}
+
+/* ============= Generic CSS ============== */
+
+.section-title {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    
+}
+.section-title h2 {
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #129CF3;
+    margin-left: -30px;
+}
+
+.section-title p {
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* =========== Navigation ============ */
+
+#nav-container {
+    float: right;
+    margin-right: 5rem;
+}
+
+.navbar-default {
+
+    background-color: transparent;
+    border-color: #444;
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #B5B5B5;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #129CF3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #B5B5B5;
+}
+
+.navbar-default .navbar-nav > .active>a, 
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus {
+    background-color: transparent;
+    color: #129CF3;
+} 
+
+
+/* =========== Header ============ */
+.header {
+    background-image: url("../images/beach-calm.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    
+}
+.header-overlay {
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 55px;
+    /*padding-top: 30px;*/
+    /*text-transform: uppercase;*/
+    text-align: center;
+}
+.header-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+.header-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.btn-view-projects,
+.btn-view-projects:focus,
+.btn-view-projects:active,
+.btn-view-projects:visited
+{
+    color: #A9ADB0;
+    background: transparent;
+    /*border-color: #129CF3;*/
+    padding: 10px 10px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+     -o-transition: all 1s;
+}
+.btn-view-projects:hover {
+    background-color: #129CF3;
+    color: #fff;    
+}
+.btn-goTo-contacts,
+.btn-goTo-contacts:focus,
+.btn-goTo-contacts:active,
+.btn-goTo-contacts:visited {
+    color: #A9ADB0;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    background: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+     -o-transition: all 1s;
+    
+}
+.btn-contacts:hover {
+    background-color: #129CF3;
+    color: #fff;
+}
+
+
+/* ========= About Me ============= */
+.choose-me-wraper {
+
+    padding-top: 50px;
+}
+
+.about-me img {
+ margin-top: 8px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+.choose-me-title {
+    padding-bottom: 50px;
+    
+}
+.choose-me-title h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    position: relative;
+}
+.choose-me-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 70px; 
+    height: 1px;
+    background-color: #129CF3;
+}
+
+.choose-me-title p {
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.choose-me-item {
+    position: relative;
+    padding-bottom: 4px;
+    padding-left: 80px;
+}
+.choose-me-item div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.choose-me-item div i {
+    font-size: 55px;
+    color: #129CF3;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+}
+.choose-me-item h3 {
+ color: #343434;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.choose-me-item p {
+    color: #727272;
+    font-size: 15px;
+}
+.degree {
+    font-style: italic;
+}
+
+/* ========= Skills ============= */
+
+#skills-title {
+    color: #129CF3;
+    text-align: center;
+    margin-top: -100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    /*position: relative;*/
+
+}
+.skills-section {
+    background-image: url("../images/testimonial-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+.skills-section-overlay {
+    background-color: rgba(31, 31, 31, .5);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.carousel-indicators {
+    bottom: -10px;
+}
+.carousel-inner .item img {
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 3px;
+}
+.testimonial-caption {
+    padding-bottom: 50px;
+}
+.testimonial-caption h2 {
+    color: #129CF3;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 25px;
+    
+}
+
+.testimonial-caption p {
+    color: #D8D8D8;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 25px;
+}
+/* ========= Features ============= */
+
+h4 {
+    display: inline-block;
+    color: #D8D8D8;
+}
+
+h4 span {
+    color: #129CF3;
+    font-style: italic;
+    font-weight: 300;
+    /*display: inline-block;*/
+
+}
+ul li {
+    font-size: 17px;
+}
+.workExperiences-inner-wrapper {
+    
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.workExperience-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 65px;
+    margin-top: 35px;
+    text-align: left;
+}
+.workExperience-item-icon {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    font-size: 40px;
+    color: #129CF3;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    
+}
+.workExperience-item h3 {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    color: #333;
+    
+    
+}
+.workExperience-item p {
+ 
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* ========= Languages ============= */
+.language {
+
+    background-color: #1a1a1a;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.language p {
+    color: #dfdfdf;
+    font-size: 18px;
+    font-weight: 300;
+}
+#lang {
+    text-align: center;
+    color: #129CF3;
+}
+
+#languages-type {
+    text-align: center;
+}
+
+/* ========= Projects ============= */
+
+.projects-tiles {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ========= Contact Me ============= */
+
+#CONTACT {
+    background-color: #1a1a1a;
+
+}
+#CONTACT h2 {
+    color: white;
+}
+#CONTACT p {
+    color: white;
+}
+
+#message {
+    height: 117px;
+    resize: none;
+}
+.contact-buttons ul {
+    margin:0;
+    padding: 0;
+    text-align: center;
+
+}
+.contact-buttons ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+
+}
+
+.btn-contacts,
+.btn-contacts:active,
+.btn-contacts:focus,
+.btn-contacts:visited {
+
+    /*text-align: center;*/
+    background-color: transparent;
+    border: 1px solid #129CF3;
+    border-radius: 8px;
+    /*width: 100%;*/
+    height: 60px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #129CF3;
+    outline: 0px !important;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.btn-contacts:hover {
+    background: #129CF3;
+    color: #fff;
+    border-color: #129CF3;
+}
+
+
+/* ========= Footer ============= */
+.footer {
+    background-color: #1a1a1a;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    border-bottom: 3px solid #129CF3;
+}
+#copyright {
+    width: 50%;
+}
+#copyright p {
+    color: #8C8B8A;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#copyright p a {
+    text-decoration: none;
+    color: #129CF3;
+}
+.scroll-top {
+    text-align: right;
+}
+.scroll-top a {
+    background-color: #129CF3;
+    padding: 25px;
+}
+.scroll-top a i {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
